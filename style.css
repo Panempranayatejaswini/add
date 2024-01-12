@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background-color: rgb(166, 101, 183);
+    flex-direction: column;
+
+}
+
+.todo {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.todo::-webkit-scrollbar {
+    display: none;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(206, 191, 191);
+    border-radius: 5px;
+}
+
+.list {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(211, 204, 204);
+    border-radius: 5px;
+}
+
+input {
+    width:260px;
+     border:none;
+     outline:none;
+
+}
+
+.data button{
+    width:100%;
+    height:100%;
+    border:none;
+    background-color:rgb(153, 188, 208);
+    border:3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 30px;
+    color: black;
+    margin-right: 1px;
+}
+
+.list button{
+    width: 40px;
+    height: 100%;
+    border:none;
+    background-color: beige;
+    border:3px solid white;
+    border-radius: 5px;
+    font-size: 30px;
+    color: white;
+    margin-right:1px;
+}
+
+.data button:hover,
+.list button:hover{
+    color: tomato;
+    background-color: white;
+    border:3px solid rgb(206, 191, 191);
+}
